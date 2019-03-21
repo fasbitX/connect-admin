@@ -1,3 +1,3 @@
 export const constant = {
-    "API_ENDPOINT": "http://stellar_api:4000"
+    "API_ENDPOINT": "http://165.227.77.160:4000"
 }
