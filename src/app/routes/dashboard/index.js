@@ -164,11 +164,11 @@ class Default extends React.Component {
     }
 
     generateAddress = () => {
-        axios.get(`${constant.API_ENDPOINT}/admin/address`)
-            .then(response => {
-                if(response.status === 200) this.setState({admin: response.data, stellarAddress: response.data.stellarAddress, stellarSeed: response.data.stellarSeed})
-            })
-            .catch(error => console.log(error));
+        // axios.get(`${constant.API_ENDPOINT}/admin/address`)
+        //     .then(response => {
+        //         if(response.status === 200) this.setState({admin: response.data, stellarAddress: response.data.stellarAddress, stellarSeed: response.data.stellarSeed})
+        //     })
+        //     .catch(error => console.log(error));
     }   
 
     render() {
@@ -277,7 +277,7 @@ class Default extends React.Component {
                         </div>
                     </div>
                     <div className="col-lg-4 col-sm-6 col-12">
-                        <div className="jr-card p-0">
+                        {/* <div className="jr-card p-0">
                             <div className="jr-card-header mb-0 p-4 bg-primary">
                                 <h3 className="card-heading">Stellar Address</h3>
                                 <p className="sub-heading text-white">
@@ -304,7 +304,7 @@ class Default extends React.Component {
                                     
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="jr-card p-0">
                             <div className="jr-card-header mb-0 p-4 bg-primary">
                                 <h3 className="card-heading">Stripe setup</h3>
